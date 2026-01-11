@@ -104,7 +104,7 @@ var ColumnManager = {
 		// Since higher values = better ranking, but alphabetical sort is ascending,
 		// we invert the value (9999 - sortValue) so best items sort first
 		// Format: "invertedSortValue|ranking" where invertedSortValue is 4-digit zero-padded
-		const sortValue = UIUtils.getRankingSortValue(ranking);
+		const sortValue = UIUtils.getRankingSortValue(itemID, ranking);
 		const invertedValue = 9999 - sortValue; // Invert: 1000 becomes 8999, 50 becomes 9949
 		const paddedValue = String(invertedValue).padStart(4, '0');
 
@@ -261,7 +261,7 @@ var ColumnManager = {
 			this.rankingCache.set(itemID, ranking);
 		}
 		
-		return UIUtils.getRankingSortValue(ranking);
+		return UIUtils.getRankingSortValue(itemID, ranking);
 	},
 	
 	/**
@@ -354,7 +354,7 @@ var ColumnManager = {
 		if (!rankingData) {
 			return undefined;
 		}
-		return this.formatRankingForDisplay(rankingData);
+		return this.formatRankingForDisplay('', rankingData);
 	},
 	
 	/**

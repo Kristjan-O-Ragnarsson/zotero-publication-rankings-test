@@ -171,7 +171,7 @@ var RankingEngine = {
 				var rank = db.matcher(normalizedTitle, debugLog);
 				if (rank) {
 					debugLog(`✓ FOUND in ${db.name}: ${rank}`);
-					var a = [db.id, rank, UIUtils.getRankingColor(rank)];
+					var a = [db.id, rank, UIUtils.getRankingColor(db.id, rank)];
 					m.push(a.join(','));
 				}
 			}
