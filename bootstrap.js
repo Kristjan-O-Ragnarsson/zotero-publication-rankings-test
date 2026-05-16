@@ -1,5 +1,5 @@
 /*
- * Publication Rankings Plugin for Zotero 7
+ * Publication Rankings Plugin for Zotero 7+
  * Bootstrap - Plugin lifecycle dispatcher
  * 
  * Copyright (C) 2025 Ben Stephens
