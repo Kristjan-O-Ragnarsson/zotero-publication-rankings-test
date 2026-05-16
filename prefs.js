@@ -20,6 +20,9 @@ pref("extensions.publication-rankings.enableABS", true);
 // Enable FT50 journal rankings
 pref("extensions.publication-rankings.enableFT50", true);
 
+// Enable VHB journal rankings
+pref("extensions.publication-rankings.enableVHB", true);
+
 // Disable Badges
 pref("extensions.publication-rankings.enableBadges", false);
 

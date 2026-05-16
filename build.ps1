@@ -50,6 +50,7 @@ $sourceFiles = @(
     "src\databases\database-core.js",
     "src\databases\database-abs.js",
     "src\databases\database-ft-50.js",
+    "src\databases\database-vhb.js",
     # Engine
     "src\engine\ranking-engine.js",
     "src\engine\matching.js",

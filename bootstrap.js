@@ -54,6 +54,7 @@ function loadModules(rootURI) {
 		'database-core.js',       // CORE database plugin (from src/databases/)
 		'database-abs.js',		  // ABS database plugin (from src/databases/)	
 		'database-ft-50.js',	  // FT50 database plugin (from src/databases/)
+		'database-vhb.js',		  // VHB database plugin (from src/databases/) 	
 
 		// Engine
 		'ranking-engine.js',      // Core ranking logic (from src/engine/)
