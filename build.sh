@@ -8,7 +8,7 @@
 # XPI files are just ZIP files with a different extension
 
 pluginName="publication-rankings"
-version="0.3.0"
+version="0.3.1-kor"
 outputFile="${pluginName}-${version}.xpi"
 
 # Remove old XPI if it exists
@@ -47,7 +47,7 @@ sourceFiles=(
     "src/databases/database-core.js"
     "src/databases/database-abs.js"
     "src/databases/database-ft-50.js"
-    "src/databases/database-vhb.js",
+    "src/databases/database-vhb.js"
     # Engine
     "src/engine/ranking-engine.js"
     "src/engine/matching.js"
