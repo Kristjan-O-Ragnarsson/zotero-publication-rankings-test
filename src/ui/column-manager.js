@@ -152,11 +152,12 @@ var ColumnManager = {
 			var r = RankingEngine.getRankingArray(item);
 			r.reverse().forEach(function (line) {
 				var e = line.split(',');
+				const source = e[0].toUpperCase().trim()
 				let b = {
 					color: e[2],
 					text: !e[1] || e[1].trim() === '' ?
-						' ' + e[0].toUpperCase().trim() + ' ' :
-						e[0].toUpperCase().trim() + ': ' + e[1].trim()
+						' ' + (source === 'MANUAL' ? 'M' : source) + ' ' :
+						(source === 'MANUAL' ? 'M' : source) + ': ' + e[1].trim()
 				};
 				bItems.push(b);
 			});
